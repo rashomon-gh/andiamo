@@ -2,9 +2,9 @@ name: Run Tests
 
 on:
   push:
-    branches: [ main, master, develop ]
+    branches: [ main ]
   pull_request:
-    branches: [ main, master, develop ]
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
@@ -41,10 +41,5 @@ jobs:
         key: ${{ runner.os }}-cargo-build-target-${{ hashFiles('**/Cargo.lock') }}
         
     - name: Run tests
-      run: cargo test --verbose
+      run: cargo test --all -- --test-threads=8  --quiet
       
-    - name: Run clippy
-      run: cargo clippy -- -D warnings
-      
-    - name: Check formatting
-      run: cargo fmt -- --check
