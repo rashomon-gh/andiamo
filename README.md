@@ -1,5 +1,7 @@
 # andiamo
 
+[![Run Tests](https://github.com/rashomon-gh/andiamo/actions/workflows/test.yml/badge.svg)](https://github.com/rashomon-gh/andiamo/actions/workflows/test.yml) 
+
 A CLI tool for managing git repositories with dual remotes (origin and mirror).
 
 ## CLI options
