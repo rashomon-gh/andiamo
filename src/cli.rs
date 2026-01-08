@@ -1,6 +1,6 @@
 use clap::Parser;
 
-#[derive(Parser)]
+#[derive(Parser, Debug, PartialEq, Clone)]
 #[command(name = "andiamo")]
 #[command(about = "A CLI tool for managing git repositories with dual remotes", long_about = None)]
 pub struct Cli {
