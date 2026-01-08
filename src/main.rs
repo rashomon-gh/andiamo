@@ -6,7 +6,7 @@ use clap::Parser;
 use cli::Cli;
 use dialoguer::Input;
 use git_helpers::{
-    GitError, add_remotes_with_urls, check_git_installed, init_repo, push_to_remotes,
+    add_remotes_with_urls, check_git_installed, init_repo, push_to_remotes,
 };
 
 fn main() {
